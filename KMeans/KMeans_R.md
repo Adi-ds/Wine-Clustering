@@ -94,29 +94,40 @@ md.pattern(
  178                    1               1               1   1     1       1 0
                         0               0               0   0     0       0 0
 ```
+<p align = "center">
+            <img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/miceplot.png">
+</p>
 
 The above output and the plot confirms that, there are no missing values in the imported dataset.
 
 # 5. Density plots, scatter plots ad correlations among the features
+```r
 library(ggplot2)
 library(GGally)
 ggpairs(
     data = winedf
 )
+```
+<p align = "center">
+            <img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/densityplot.png">
+</p>
+
 
 # 6. Feature Scaling
+```r
 library(dplyr)
 scaled_df <- winedf %>% 
                 mutate_all(scale)
+```
 
 # 7. KMeans Clustering
-# Before applying KMeans method, we have to fid the optimal number of clusters to be used. To identify the optimum number of clusters, three methods will be used here :
-# 1. Elbow Method
-# 2. Silhoutte Scores
-# 3. Gap Statistic
-# 
-# 7.1 Elbow Method
-# In this process,Within Sum of Squares for k number of clusters. The WSS are then plotted against the corressponding KMeans with k clusters.
+Before applying KMeans method, we have to fid the optimal number of clusters to be used. To identify the optimum number of clusters, three methods will be used here :
+1. Elbow Method
+2. Silhoutte Scores
+3. Gap Statistic
+ 
+## 7.1 Elbow Method
+```r
 kmeans_withinss <- function(k) {
                         cluster <- kmeans(
                                         scaled_df,
@@ -167,9 +178,15 @@ ylab(
 ggtitle(
     "Number of Clusters vs Within Sum of Squares"
 )
-# The plot obtained, shows that the optimum number of classes will be 3.
+```
+<p align = "center">
+            <img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/elbow.png">
+</p>
 
-# 7.2 Silhoutte Score
+From the above plot, the number of optimal classes cannot be determined clearly.
+
+## 7.2 Silhoutte Score
+```r
 library(cluster)
 sil_score <- function(k) {
                     km <- kmeans(
@@ -222,9 +239,15 @@ ylab(
 ggtitle(
     "Number of Clusters vs Average Silhouette Score"
 )
-# The obtained plot shows that the optimum number of clusters will be 3.
+```
+<p align = "center">
+            <img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/silhoutte.png">
+</p>
+
+Here also, from the above plot, the number of optimal classes cannot be determined clearly.
 
 # 7.3 Gap Statistic
+```r
 gaps <- clusGap(
             x = scaled_df,
             FUNcluster = kmeans,
@@ -267,32 +290,49 @@ ylab(
 ggtitle(
     "Optimal Number of Clusters"
 )
-# Here also, the optimum number of clusters obtained is 3.
-# 
-# So, this dataset will have 3 clusters.
-# 
-# 
+```
+<p align = "center">
+            <img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/gap.png">
+</p>
+
+From the above plot it is clear that the optimum number of clusters will be 3.
+
+ 
 # Fitting KMeans with 3 clusters
+```r
 library(animation) 
-png(
-    filename = "/home/adi/Pictures/kanime%03d.png",
-    width = 720,
-    height = 720,
-    units = "px"
-)
 kmeans.ani(
     x = scaled_df,
     centers = 3,
     pch = c(18, 16, 17),
     col = c("red","green","blue")
 )
+```
+<p>
+            <figcaption>1</figcaption><img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime001.png" width = 480 height = 480>
+            <figcaption>2</figcaption><img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime002.png" width = 480 height = 480>
+            <figcaption>3</figcaption><img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime003.png" width = 480 height = 480>
+            <figcaption>4</figcaption><img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime004.png" width = 480 height = 480>
+            <figcaption>5</figcaption><img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime005.png" width = 480 height = 480>
+            <figcaption>6</figcaption><img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime006.png" width = 480 height = 480>
+            <figcaption>7</figcaption><img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime007.png" width = 480 height = 480>
+            <figcaption>8</figcaption><img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime008.png" width = 480 height = 480>
+            <figcaption>9</figcaption><img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime009.png" width = 480 height = 480>
+            <figcaption>10</figcaption><img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime010.png" width = 480 height = 480>
+            <figcaption>11</figcaption><img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime011.png" width = 480 height = 480>
+            <figcaption>12</figcaption><img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime012.png" width = 480 height = 480>
+            <figcaption>13</figcaption><img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime013.png" width = 480 height = 480>
+            <figcaption>14</figcaption><img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime014.png" width = 480 height = 480>
+</p>
 
+```r
 final <- kmeans(
             scaled_df,
             3
 )
+```
+```r
 library(factoextra)
-library(ggplot2)
 library(grid)
 library(ggplotify)
 plot_list = list()
@@ -317,27 +357,12 @@ for (i in seq_along(winedf)) {
 }
 
 library(cowplot)
-png(
-    filename = "/home/adi/Pictures/clustplot.png",
-    width = 1920,
-    height = 1920,
-    units = "px"
-)
-jpeg(
-    filename = "/home/adi/Pictures/clustplot.jpeg",
-    width = 1920,
-    height = 1920,
-    units = "px"
-)
-bmp(
-    filename = "/home/adi/Pictures/clustplot.bmp",
-    width = 1920,
-    height = 1920,
-    units = "px"
-)
 plot_grid(
     plotlist = plot_list,
     nrow = 13,
     ncol = 13
 )
-dev.off()
+```
+<p align = "center">
+            <img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/clustplot.png" width = 1080 height = 1080>
+</p>

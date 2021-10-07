@@ -308,21 +308,60 @@ kmeans.ani(
     col = c("red","green","blue")
 )
 ```
-<p>
-            <figcaption>1</figcaption><img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime001.png" width = 480 height = 480>
-            <figcaption>2</figcaption><img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime002.png" width = 480 height = 480>
-            <figcaption>3</figcaption><img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime003.png" width = 480 height = 480>
-            <figcaption>4</figcaption><img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime004.png" width = 480 height = 480>
-            <figcaption>5</figcaption><img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime005.png" width = 480 height = 480>
-            <figcaption>6</figcaption><img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime006.png" width = 480 height = 480>
-            <figcaption>7</figcaption><img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime007.png" width = 480 height = 480>
-            <figcaption>8</figcaption><img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime008.png" width = 480 height = 480>
-            <figcaption>9</figcaption><img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime009.png" width = 480 height = 480>
-            <figcaption>10</figcaption><img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime010.png" width = 480 height = 480>
-            <figcaption>11</figcaption><img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime011.png" width = 480 height = 480>
-            <figcaption>12</figcaption><img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime012.png" width = 480 height = 480>
-            <figcaption>13</figcaption><img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime013.png" width = 480 height = 480>
-            <figcaption>14</figcaption><img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime014.png" width = 480 height = 480>
+<p align = "center">
+            <img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime001.png" width = 720 height = 720><figcaption>1</figcaption>
+</p>
+
+<p align = "center">
+            <img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime002.png" width = 720 height = 720><figcaption>2</figcaption>
+</p>
+
+<p align = "center">
+            <img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime003.png" width = 720 height = 720><figcaption>3</figcaption>
+</p>
+
+<p align = "center">
+            <img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime004.png" width = 720 height = 720><figcaption>4</figcaption>
+</p>
+
+<p align = "center">
+            <img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime005.png" width = 720 height = 720><figcaption>5</figcaption>
+</p>
+
+<p align = "center">
+            <img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime006.png" width = 720 height = 720><figcaption>6</figcaption>
+</p>
+
+<p align = "center">
+            <img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime007.png" width = 720 height = 720><figcaption>7</figcaption>
+</p>
+
+<p align = "center">
+            <img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime008.png" width = 720 height = 720><figcaption>8</figcaption>
+</p>
+
+<p align = "center">
+            <img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime009.png" width = 720 height = 720><figcaption>9</figcaption>
+</p>
+
+<p align = "center">
+            <img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime010.png" width = 720 height = 720><figcaption>10</figcaption>
+</p>
+
+<p align = "center">
+            <img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime011.png" width = 720 height = 720><figcaption>11</figcaption>
+</p>
+
+<p align = "center">
+            <img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime012.png" width = 720 height = 720><figcaption>12</figcaption>
+</p>
+
+<p align = "center">
+            <img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime013.png" width = 720 height = 720><figcaption>13</figcaption>
+</p>
+
+<p align = "center">
+            <img src = "https://github.com/Adi-ds/Wine-Clustering/blob/main/KMeans/kanime014.png" width = 720 height = 720><figcaption>14</figcaption>
 </p>
 
 ```r
